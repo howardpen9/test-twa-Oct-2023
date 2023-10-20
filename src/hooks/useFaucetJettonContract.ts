@@ -1,10 +1,17 @@
+import { Address, OpenedContract } from "ton-core";
+
 import { useAsyncInitialize } from "./useAsyncInitialize";
 import { useTonClient } from "./useTonClient";
 import { useTonConnect } from "./useTonConnect";
+
 import FaucetJetton from "../contracts/faucetJetton";
-import { Address, OpenedContract } from "ton-core";
 import FaucetJettonWallet from "../contracts/faucetJettonWallet";
+
 import { useQuery } from "@tanstack/react-query";
+
+const Jetton_Contract = Address.parse(
+  "EQB8StgTQXidy32a8xfu7j4HMoWYV0b0cFM8nXsP2cza_b7Y"
+); // replace with your address from tutorial 2 step 8
 
 export function useFaucetJettonContract() {
   const { wallet, sender } = useTonConnect();
@@ -12,9 +19,9 @@ export function useFaucetJettonContract() {
 
   const faucetJettonContract = useAsyncInitialize(async () => {
     if (!client || !wallet) return;
-    const contract = new FaucetJetton(
-      Address.parse("EQB8StgTQXidy32a8xfu7j4HMoWYV0b0cFM8nXsP2cza_b7Y") // replace with your address from tutorial 2 step 8
-    );
+
+    const contract = new FaucetJetton(Jetton_Contract);
+
     return client.open(contract) as OpenedContract<FaucetJetton>;
   }, [client, wallet]);
 
