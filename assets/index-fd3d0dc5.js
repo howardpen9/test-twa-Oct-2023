@@ -1198,4 +1198,4 @@ Values:
 `,Mce=as.div`
   max-width: 900px;
   margin: 0 auto;
-`;function _ce(){const{network:e}=Au();return Xt(xce,{children:Xt(Mce,{children:_i(sg,{children:[_i(fu,{children:[Xt(_B,{}),Xt(ug,{children:e?e===$s.MAINNET?"mainnet":"testnet":"N/A"})]}),Xt(pce,{}),Xt(wce,{}),Xt(bce,{})]})})})}const Sce="https://github.com/howardpen9/test-twa-Oct-2023/blob/main/manifest.json",Cce=new DL({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});y4.createRoot(document.getElementById("root")).render(Xt(UZ,{manifestUrl:Sce,children:Xt(iD,{client:Cce,children:Xt(_ce,{})})}));
+`;function _ce(){const{network:e}=Au();return Xt(xce,{children:Xt(Mce,{children:_i(sg,{children:[_i(fu,{children:[Xt(_B,{}),Xt(ug,{children:e?e===$s.MAINNET?"mainnet":"testnet":"N/A"})]}),Xt(pce,{}),Xt(wce,{}),Xt(bce,{})]})})})}const Sce="https://github.com/howardpen9/test-twa-Oct-2023/blob/main/tonconnect-manifest.json",Cce=new DL({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});y4.createRoot(document.getElementById("root")).render(Xt(UZ,{manifestUrl:Sce,children:Xt(iD,{client:Cce,children:Xt(_ce,{})})}));
