@@ -7,7 +7,8 @@ import "./index.css";
 
 const manifestUrl = // this manifest is used temporarily for development purposes
   // "https://raw.githubusercontent.com/ton-community/tutorials/main/03-client/test/public/tonconnect-manifest.json";
-  "https://github.com/howardpen9/test-twa-Oct-2023/blob/main/manifest.json";
+  "https://github.com/howardpen9/test-twa-Oct-2023/blob/main/tonconnect-manifest.json";
+  // "https://github.com/ndatg/tonconnect-manifest-example/blob/main/tonconnect-manifest.json"
   
 const queryClient = new QueryClient({
   defaultOptions: { queries: { refetchOnWindowFocus: false } },
