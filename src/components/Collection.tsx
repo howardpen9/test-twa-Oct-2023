@@ -20,7 +20,7 @@ export function Collection() {
 
       <Card>
         <FlexBoxCol>
-          <h3>Collection</h3>
+          <h3>NFT Collection</h3>
           <FlexBoxRow>
             <b>Address</b>
             <Ellipsis>{address}</Ellipsis>

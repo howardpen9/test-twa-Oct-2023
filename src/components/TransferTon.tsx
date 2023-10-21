@@ -15,11 +15,11 @@ export function TransferTon() {
   return (
     <Card>
       <FlexBoxCol>
-        <h3>Transfer TON</h3>
+        <h3>Transfer TONcoin</h3>
         <FlexBoxRow>
           <label>Amount </label>
           <Input
-            style={{ marginRight: 8 }}
+            style={{ marginRight: 300 }}
             type="number"
             value={tonAmount}
             onChange={(e) => setTonAmount(e.target.value)}
