@@ -1,0 +1,10 @@
+{
+    "projects": [{
+        "name": "sample",
+        "path": "./tact-contracts/contract.tact",
+        "output": "./tact-contracts/output",
+        "options": {
+            "external": true  
+        }
+    }]
+}

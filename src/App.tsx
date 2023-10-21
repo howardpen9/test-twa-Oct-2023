@@ -9,6 +9,8 @@ import { useTonConnect } from "./hooks/useTonConnect";
 import { CHAIN } from "@tonconnect/protocol";
 import "@twa-dev/sdk";
 
+import { Collection } from "./components/Collection";
+
 const StyledApp = styled.div`
   background-color: #e8e8e8;
   color: black;
@@ -46,6 +48,7 @@ function App() {
           <Counter />
           <TransferTon />
           <Jetton />
+          <Collection />
         </FlexBoxCol>
       </AppContainer>
     </StyledApp>
